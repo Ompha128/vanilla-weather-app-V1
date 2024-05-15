@@ -4,6 +4,13 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+h1{
+    margin-top:40px;
+}
+main p{
+    margin-top:-20px;
+    color:#87CEFF;
+}
 
 .weather-container{
     background: #114ab5;
@@ -40,4 +47,29 @@ body{
 .search-button:hover{
     background:#0000FF;
     color: #87CEFF;
+}
+.temperature-details{
+    margin-top:15px;
+}
+.temp-value,.temp-unit{
+    font-size:45px;
+    color:#09b8e8;
+}
+
+.weather-description{
+    margin-top:-10px;
+}
+.additional-temp-details{
+    display: flexbox;
+    
+}
+.humidity{
+    margin-left:350px;
+    margin-top: -20px;
+}
+.temp-icon{
+    margin-left:300px;
+    font-size: 85px;
+
+    
 }
