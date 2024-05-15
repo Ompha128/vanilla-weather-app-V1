@@ -1,0 +1,43 @@
+body{
+    background: #0f0f36;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.weather-container{
+    background: #114ab5;
+    max-width: 600px;
+    margin: 0 auto;
+    padding:50px;
+    border-radius: 20px;
+
+}
+.search-form{
+    margin-top:-20px;
+    
+}
+.search-location{
+    font-size:15px;
+    padding:10px;
+    width:300px;
+    border:none;
+    border-radius: 10px;
+    
+
+}
+.search-button{
+    font-size:15px;
+    padding:10px;
+    margin-left:10px;
+    width:150px;
+    border-radius: 10px;
+    border:none;
+    background: #87CEFF;
+    color:#0000FF;
+    transition: all 300ms ease-in-out;
+}
+.search-button:hover{
+    background:#0000FF;
+    color: #87CEFF;
+}
