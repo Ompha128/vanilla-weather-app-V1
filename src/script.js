@@ -17,15 +17,20 @@ function getTemperature(response){
   let timeElement = document.querySelector("#current-time");
   let date=new Date(response.data.time * 1000);
   let descriptionElement=document.querySelector("#description");
+  let humidityElement=document.querySelector("#humidity");
+  let windElement=document.querySelector("#wind");
+  let iconElement=document.querySelector("#icon");
   
   
   temperatureElement.innerHTML = currentTemperature;
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML=response.data.condition.description;
-  
-
+  humidityElement.innerHTML=`${response.data.temperature.humidity}%`;
+  windElement.innerHTML=`${response.data.wind.speed}km/h`;
+ iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="temp-icon" />`;
 }
+  
 
 function formatDate(date) {
   
